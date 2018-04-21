@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Курс НБУ</string>
+    <string name="refresh">обновить</string>
+    <string name="info">information</string>
+    <string name="currency">валюта</string>
+    <string name="name">название</string>
+</resources>
