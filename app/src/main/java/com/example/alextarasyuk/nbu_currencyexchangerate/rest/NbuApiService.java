@@ -4,6 +4,8 @@ import com.example.alextarasyuk.nbu_currencyexchangerate.model.CurrencyModel;
 
 import java.util.List;
 
+import io.reactivex.Observable;
+import io.reactivex.Single;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -16,7 +18,7 @@ public interface NbuApiService {
     Call<List<CurrencyModel>> getExchangeRate();
 
     @GET
-    Call<List<CurrencyModel>>  getCurrency(
+    Observable <List<CurrencyModel>> getCurrency(
             @Url String url
     );
 
